@@ -1,3 +1,3 @@
-var a=10;
-var b=10;
-console.log(a+b)
+var a='10';
+var b='rahul';
+console.log(a-b)
