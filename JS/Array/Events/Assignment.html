@@ -1,0 +1,59 @@
+<html>
+    <head></head>
+
+    <body>
+        <h1>Events</h1>
+        <strong>OnMouseOver</strong>
+        <p>mouseover to change button background-color</p>
+        <button id="Mouse" onmouseover="change_color()" style="background-color: blue;">Mouse Over</button>
+        <br><br>
+        <strong>OnMouseOut</strong>
+        <p>mouseover to change button background-color</p>
+        <button id="ydr" onmouseout="change_color2()" style="background-color:green;">Mouse Out</button>
+        <br><br>
+        <strong>OnClick</strong>
+        <p>click to change the button backgroundColor</p>
+        <button id="darkroom" onclick="change_color3()" style="background-color:black;">On click</button>
+        <br><br>
+        <strong>OnDoubleClick</strong>
+        <p>Double click to change the button backgroundColor</p>
+        <button id="Double" ondblclick="change_color4()" style="background-color:red;">On Double click</button>
+        <br><br>
+        <strong>OnFocus</strong>
+        <p>OnFocus to change the button backgroundColor</p>
+        <input id="focus" onfocus="change_color5()" style="background-color:pink;"/>
+        <br><br>
+        <strong>OnBlur</strong>
+        <p>OnBlur to change Lower case to Upper case</p>
+        <input id="onblur" type="text" onblur="style()" />
+    </body>
+
+    <script>
+        function change_color()
+        {
+            document.getElementById('Mouse').style.backgroundColor='red'
+        }
+
+            function change_color2()
+        {
+            document.getElementById('ydr').style.backgroundColor='blue'
+        }
+
+        function change_color3()
+        {
+            document.getElementById('darkroom').style.backgroundColor='yellow'
+        }
+        function change_color4()
+        {
+            document.getElementById('Double').style.backgroundColor='pink'
+        }
+        function change_color5()
+        {
+            document.getElementById('focus').style.backgroundColor='grey'
+        }
+        function style()
+        {
+            document.getElementById('onblur').style.fontSize.toUpperCase
+        }
+    </script>
+</html>
