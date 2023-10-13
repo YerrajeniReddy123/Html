@@ -25,7 +25,7 @@
         <br><br>
         <strong>OnBlur</strong>
         <p>OnBlur to change Lower case to Upper case</p>
-        <input id="onblur" type="text" onblur="style()" />
+        <input id="onblur" type="text" onblur="change_color6()" />
     </body>
 
     <script>
@@ -51,9 +51,11 @@
         {
             document.getElementById('focus').style.backgroundColor='grey'
         }
-        function style()
+        function change_color6()
         {
-            document.getElementById('onblur').style.fontSize.toUpperCase
+           let name=document.getElementById('onblur').value
+           //document.getElementById('onblur').value="Good Morning"
+           document.getElementById('onblur').value=name.toUpperCase()
         }
     </script>
 </html>
