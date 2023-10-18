@@ -1,0 +1,9 @@
+a{
+    background-color: blue;
+}
+[target="_blank"]{
+    background-color: greenyellow;
+}
+*{
+    background-color: cyan;
+}

@@ -56,8 +56,8 @@ let data_list=()=>{
         rows=rows + `<tr>
                         <td>${employees[i].id}</td>
                         <td>${employees[i].name}</td>
-                        <td>${employees[i].email.split('@')}</td>
-                        <td>${employees[i].gender.substr(0,1)}</td>
+                        <td>${employees[i].email}</td>
+                        <td>${employees[i].gender}</td>
                     </tr>`
         document.getElementById('details').innerHTML=rows
     }
