@@ -29,10 +29,23 @@ let users=[{"id":1,"name":"Leupold","gender":"Male"},
 {"id":29,"name":"Barnaby","gender":"Male"},
 {"id":30,"name":"Dennet","gender":"Male"}]
 
-let male_users=[]
+/*let male_users=[]
 users.forEach(emp => {
     if(emp.gender=="Male")
     return male_users.push(emp)
 });
 
 console.log(male_users)
+
+users.filter(f_users=>{
+    if (f_users.gender=="Female") {
+     console.log(f_users)   
+    }
+})*/
+
+let f_users=users.filter(user=>{
+    if (user.gender=="Female") {
+        return user
+    }
+})
+console.log(f_users) 
