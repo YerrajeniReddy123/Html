@@ -1,8 +1,8 @@
 import React, { Fragment } from "react"
-import Data from "./Data"
+import Component from "./Component"
 let App=()=>{
     return <Fragment>
-     <Data/>
+        <Component/>
     </Fragment>
 }
 export default App

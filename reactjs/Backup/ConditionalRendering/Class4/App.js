@@ -1,8 +1,8 @@
 import React, { Fragment } from "react"
-import Data from "./Data"
+import Condition from "./Condtion"
 let App=()=>{
     return <Fragment>
-     <Data/>
+     <Condition/>
     </Fragment>
 }
 export default App
