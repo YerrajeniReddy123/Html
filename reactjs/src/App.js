@@ -1,10 +1,10 @@
 import React from "react"
 
-//import Clock1 from "./DigitalClock/Clock1"
-import Post from "./API/Post"
+import Message1 from "./Hooks/UseState/Message1"
+import Product from "./Hooks/UseState/Product"
 let App=()=>{
     return <div>
-            <Post/>
+            <Product/>
         </div>
 }
 export default App
