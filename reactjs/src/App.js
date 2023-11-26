@@ -1,9 +1,15 @@
 import React from "react"
-//import Login from "./FormHandling/FormHandling1/Login"
-import Login1 from "./FormHandling/FormHandling1/Login1"
+import Message from "./Redux1/Message/Message"
+import { Provider } from "react-redux"
+import { store } from "./Redux1/Redux/Store"
 const App=()=>{
     return <div>
-        <Login1/>
+        <Provider store={store}>
+        <h1>App Component</h1>
+        <hr />
+        <Message/>
+        </Provider>
+        
     </div>
 }
 export default App
