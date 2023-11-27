@@ -1,15 +1,14 @@
 import React from "react"
-import Message from "./Redux1/Message/Message"
+import Product from "./Redux2/Product/Product"
 import { Provider } from "react-redux"
-import { store } from "./Redux1/Redux/Store"
+import { store } from "./Redux2/Redux/Store"
 const App=()=>{
     return <div>
         <Provider store={store}>
-        <h1>App Component</h1>
-        <hr />
-        <Message/>
+            <h1>App Component</h1>
+            <hr />
+            <Product/>
         </Provider>
-        
     </div>
 }
 export default App
