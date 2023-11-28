@@ -1,14 +1,21 @@
-import React from "react"
-import Product from "./Redux2/Product/Product"
-import { Provider } from "react-redux"
-import { store } from "./Redux2/Redux/Store"
+import React, {Component} from "react"
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
+import Navbar from "./Navbar/Navbar"
+import Home from "./Component/Home"
+import About from "./Component/About"
+import Contact from "./Component/Contact"
+
 const App=()=>{
     return <div>
-        <Provider store={store}>
-            <h1>App Component</h1>
-            <hr />
-            <Product/>
-        </Provider>
+        <Router>
+            <Navbar/>
+            <Switch>
+                <Route path="/home" Component={Home} />
+                <Route path="/about" Component={About} />
+                <Route path="/contact" Component={Contact} /> 
+            </Switch>
+        </Router>
+     
     </div>
 }
 export default App
